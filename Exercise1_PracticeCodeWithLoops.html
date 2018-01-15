@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta charset="utf-8">
+        <title>Brandi Quinlisk - Exercise 1, Practic Code with Loops</title>
+       
+    </head>
+    <body>        
+        <script>            
+//          =============================================================            
+//          =============================================================
+//          PART 1:
+            
+            var number = 1;
+            
+            while(number <= 300){                                               
+                if (number % 7 == 0){ // The modulus calculates the remainder of the "number" divided by 7. If the remainder equals 0, then the "number" is divisible by 7 and will then log/write this statement (and so on below, just with different numbers).
+                    console.log("Fuzz")
+                    document.write("Fuzz" + "<br>"); // I added document.write, in addition to the required console.log throughout all three exercises. I did this to be able to practice writing to the console as well as debugging practice with console.log.
+                } else if (number % 5 == 0) {
+                    console.log("Fizz")
+                    document.write("Fizz" + "<br>");                
+                } else {
+                    document.write(number + "<br>");
+                }
+                number++;
+            }   
+            
+//          =============================================================            
+//          =============================================================
+//          PART 2:     
+            var number = 1;            
+            while(number <= 300){                                               
+                if (number % 3 == 0 && number % 5 == 0){
+                    console.log("FizzFuzz")
+                    document.write("FizzFuzz" + "<br>");
+                } else if (number % 7 == 0){
+                    console.log("Fuzz")
+                    document.write("Fuzz" + "<br>");
+                } else if (number % 5 == 0) {
+                    console.log("Fizz")
+                    document.write("Fizz" + "<br>");                
+                } else {
+                    document.write(number + "<br>");
+                }
+                number++;
+            } 
+            
+//          =============================================================            
+//          =============================================================
+//          PART 3:
+            var triangleStart = '#######'; 
+            for (var counter = 7; counter > 0; counter--){
+                var trianglePoint = triangleStart.substring(triangleStart.length - counter);  // The substring method allows you to specify which part of the string to use.
+                console.log(trianglePoint);
+                document.write(trianglePoint + "<br>");
+            }                    
+        </script>
+    </body>
+</html>
+
